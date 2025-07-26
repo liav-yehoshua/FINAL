@@ -45,6 +45,32 @@ ProjectFinalv1.1/
 
 ---
 
+## הגנה על קובץ google-credentials.json
+
+**חשוב!** קובץ ההרשאות `google-credentials.json` מכיל מידע רגיש ואסור להעלות אותו ל-GitHub או לשתף אותו עם אחרים.
+
+### מה עושים?
+- הוסיפו את השורה הבאה לקובץ `.gitignore` (כבר קיים בפרויקט):
+  ```
+  google-credentials.json
+  ```
+- ודאו שהקובץ לא נמצא ב-stage (`git status`), ואם כן – הסירו אותו עם:
+  ```
+  git rm --cached google-credentials.json
+  ```
+- כל משתמש צריך ליצור לעצמו קובץ הרשאות לפי ההוראות למעלה.
+
+### איך כל משתמש יוצר קובץ?
+1. היכנסו ל-[Google Cloud Console](https://console.cloud.google.com/).
+2. צרו פרויקט חדש או השתמשו בפרויקט קיים.
+3. הפעילו את Google Vision API.
+4. צרו Service Account, תנו לו הרשאות ל-Vision API, והורידו את קובץ ה-JSON.
+5. שימו את הקובץ בשם `google-credentials.json` בתיקיית הפרויקט.
+
+**לעולם אל תשתפו את הקובץ הזה או תעלו אותו ל-GitHub!**
+
+---
+
 ## הפעלת המערכות
 ### בודק מבחנים (exam_grader.py)
 1. הפעל את הסקריפט:
@@ -102,7 +128,3 @@ ProjectFinalv1.1/
 - שימוש ב-Google Cloud Vision API
 - שימוש ב-Gemini (Google Generative Language API)
 - ספריות קוד פתוח: Pillow, tkinter, requests ועוד
-
----
-
-בהצלחה! 
