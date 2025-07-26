@@ -99,7 +99,6 @@ ProjectFinalv1.1/
 ---
 
 ## קרדיטים
-- פיתוח: [השם שלך/צוות]
 - שימוש ב-Google Cloud Vision API
 - שימוש ב-Gemini (Google Generative Language API)
 - ספריות קוד פתוח: Pillow, tkinter, requests ועוד
