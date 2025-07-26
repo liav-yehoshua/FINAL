@@ -1,0 +1,6 @@
+pytesseract
+Pillow
+googletrans==4.0.0-rc1
+# You must also install Tesseract-OCR from https://github.com/tesseract-ocr/tesseract 
+easyocr
+torch 
